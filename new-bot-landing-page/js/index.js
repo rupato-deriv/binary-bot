@@ -226,6 +226,21 @@ var xml = function xml(dom) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(209);
+} else {
+  module.exports = __webpack_require__(210);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
  * jQuery JavaScript Library v3.6.0
  * https://jquery.com/
@@ -11111,21 +11126,6 @@ return jQuery;
 
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(209);
-} else {
-  module.exports = __webpack_require__(210);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
-
-/***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12462,7 +12462,7 @@ var removeSpinnerInButton = function removeSpinnerInButton($buttonElement, initi
     return initialText;
   }).prop('disabled', false);
 };
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
 /* 30 */
@@ -13999,7 +13999,7 @@ var logoutAllTokens = function logoutAllTokens() {
     }
   });
 };
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
 /* 42 */
@@ -15203,7 +15203,7 @@ var showBanner = /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }();
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
 /* 56 */
@@ -28833,7 +28833,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.clamp = clamp;
 exports.canUseDOM = exports.slidesOnLeft = exports.slidesOnRight = exports.siblingDirection = exports.getTotalSlides = exports.getPostClones = exports.getPreClones = exports.getTrackLeft = exports.getTrackAnimateCSS = exports.getTrackCSS = exports.checkSpecKeys = exports.getSlideCount = exports.checkNavigable = exports.getNavigableIndexes = exports.swipeEnd = exports.swipeMove = exports.swipeStart = exports.keyHandler = exports.changeSlide = exports.slideHandler = exports.initializedState = exports.extractObject = exports.canGoNext = exports.getSwipeDirection = exports.getHeight = exports.getWidth = exports.lazySlidesOnRight = exports.lazySlidesOnLeft = exports.lazyEndIndex = exports.lazyStartIndex = exports.getRequiredLazySlides = exports.getOnDemandLazySlides = exports.safePreventDefault = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(3));
+var _react = _interopRequireDefault(__webpack_require__(2));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -44989,7 +44989,7 @@ exports.version = ReactVersion;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(3),n=__webpack_require__(77),r=__webpack_require__(148);function u(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(u(227));
+var aa=__webpack_require__(2),n=__webpack_require__(77),r=__webpack_require__(148);function u(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(u(227));
 function ba(a,b,c,d,e,f,g,h,k){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}var da=!1,ea=null,fa=!1,ha=null,ia={onError:function(a){da=!0;ea=a}};function ja(a,b,c,d,e,f,g,h,k){da=!1;ea=null;ba.apply(ia,arguments)}function ka(a,b,c,d,e,f,g,h,k){ja.apply(this,arguments);if(da){if(da){var l=ea;da=!1;ea=null}else throw Error(u(198));fa||(fa=!0,ha=l)}}var la=null,ma=null,na=null;
 function oa(a,b,c){var d=a.type||"unknown-event";a.currentTarget=na(c);ka(d,b,void 0,a);a.currentTarget=null}var pa=null,qa={};
 function ra(){if(pa)for(var a in qa){var b=qa[a],c=pa.indexOf(a);if(!(-1<c))throw Error(u(96,a));if(!sa[c]){if(!b.extractEvents)throw Error(u(97,a));sa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;if(ta.hasOwnProperty(h))throw Error(u(99,h));ta[h]=f;var k=f.phasedRegistrationNames;if(k){for(e in k)k.hasOwnProperty(e)&&ua(k[e],g,h);e=!0}else f.registrationName?(ua(f.registrationName,g,h),e=!0):e=!1;if(!e)throw Error(u(98,d,a));}}}}
@@ -46187,7 +46187,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(3);
+var React = __webpack_require__(2);
 var _assign = __webpack_require__(77);
 var Scheduler = __webpack_require__(148);
 var checkPropTypes = __webpack_require__(127);
@@ -72365,7 +72365,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 var htmlParser = __webpack_require__(228);
-var React = __webpack_require__(3);
+var React = __webpack_require__(2);
 var convertAttr = __webpack_require__(255);
 var styleParser = __webpack_require__(256);
 
@@ -75697,7 +75697,7 @@ navMenuListener();
 topNavMenuListener();
 documentListener();
 langListener();
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
 /* 287 */,
@@ -76211,7 +76211,7 @@ module.exports = {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_replace_js__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_replace_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_regexp_replace_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
@@ -76226,7 +76226,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__common_utils_storageManager__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__common_utils_tools__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__common_binary_ui_dropdown__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__react_components_BotLanding_jsx__ = __webpack_require__(747);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__react_components_bot_landing__ = __webpack_require__(747);
 
 
 
@@ -76242,31 +76242,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+var today = new Date().getTime();
+var expirationDate = today + 1000 * 60 * 60 * 24 * 21;
+var elements = ['#notification-banner', '#main', '#footer', '#header', '#topbar'];
 
 var renderBanner = function renderBanner() {
-  var today = new Date().getTime();
-  var expirationDate = today + 1000 * 60 * 60 * 24 * 21;
-  var elements = document.querySelectorAll('#notification-banner,#main,#footer,#header,#topbar');
-  __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_14__react_components_BotLanding_jsx__["a" /* default */], null), document.getElementById('bot-landing'));
+  __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_14__react_components_bot_landing__["a" /* default */], null), document.getElementById('bot-landing'));
   Object(__WEBPACK_IMPORTED_MODULE_11__common_utils_storageManager__["i" /* set */])('setDueDateForBanner', expirationDate);
 
   for (var i = 0; i < elements.length; i++) {
-    elements[i].style.display = 'none';
+    document.querySelector(elements[i]).classList.add('hidden');
   }
 
-  document.getElementById('bot-landing').style.display = 'block';
-  document.getElementById('bot-main').style.display = 'block';
+  document.getElementById('bot-landing').classList.remove('hidden');
+  document.getElementById('bot-main').classList.remove('hidden');
+  $('.barspinner').hide();
 };
 
 var renderElements = function renderElements() {
+  $('.barspinner').show();
   var temp = Object(__WEBPACK_IMPORTED_MODULE_11__common_utils_storageManager__["b" /* get */])('setDueDateForBanner');
 
   if (!temp) {
     renderBanner();
   } else {
-    var today = new Date().getTime();
-    var elements = document.querySelectorAll('#notification-banner,#main,#footer,#header,#topbar');
-
     if (today > Object(__WEBPACK_IMPORTED_MODULE_11__common_utils_storageManager__["b" /* get */])('setDueDateForBanner')) {
       Object(__WEBPACK_IMPORTED_MODULE_11__common_utils_storageManager__["f" /* remove */])('setDueDateForBanner');
     }
@@ -76284,10 +76283,11 @@ var renderElements = function renderElements() {
     }));
 
     for (var i = 0; i < elements.length; i++) {
-      elements[i].style.display = 'block';
+      document.querySelector(elements[i]).classList.add('hidden');
     }
 
-    document.getElementById('bot-landing').style.display = 'none';
+    document.getElementById('bot-landing').classList.add('hidden');
+    $('.barspinner').hide();
   }
 };
 
@@ -76299,7 +76299,7 @@ var loginCheck = function loginCheck() {
   if (temp) {
     if (Object(__WEBPACK_IMPORTED_MODULE_11__common_utils_storageManager__["d" /* getTokenList */])().length) {
       window.location.pathname = window.location.pathname.replace(/\/+$/, '') + "/bot.html";
-      document.getElementById('bot-main').style.display = 'block';
+      document.getElementById('bot-main').classList.remove('hidden');
     } else {
       Object(__WEBPACK_IMPORTED_MODULE_9__common_lang__["b" /* load */])();
       Object(__WEBPACK_IMPORTED_MODULE_6__common_appId__["k" /* oauthLogin */])(function () {
@@ -76310,13 +76310,12 @@ var loginCheck = function loginCheck() {
       });
     }
   } else {
-    $('.barspinner').hide();
     renderBanner();
   }
 };
 
 loginCheck();
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
 /* 743 */
@@ -76453,7 +76452,7 @@ function resetEndpoint() {
   Object(__WEBPACK_IMPORTED_MODULE_6__common_utils_storageManager__["i" /* set */])('config.app_id', Object(__WEBPACK_IMPORTED_MODULE_7__common_appId__["g" /* getDefaultEndpoint */])().appId);
   Object(__WEBPACK_IMPORTED_MODULE_6__common_utils_storageManager__["i" /* set */])('config.server_url', Object(__WEBPACK_IMPORTED_MODULE_7__common_appId__["g" /* getDefaultEndpoint */])().url);
 }
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
 /* 744 */
@@ -76487,7 +76486,7 @@ $export($export.P + $export.F * __webpack_require__(121)(ENDS_WITH), 'String', {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_utils_tools__ = __webpack_require__(29);
 
@@ -76527,7 +76526,7 @@ var Logo = function Logo() {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_map_js__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_map_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_map_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_i18n__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_utils_tools__ = __webpack_require__(29);
@@ -76729,235 +76728,120 @@ var Footer = function Footer() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Carousel_jsx__ = __webpack_require__(748);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_i18n__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_appId__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Hero_jsx__ = __webpack_require__(748);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SwitchSection_jsx__ = __webpack_require__(749);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Carousel_jsx__ = __webpack_require__(750);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__WaitSection_jsx__ = __webpack_require__(767);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ChooseSection_jsx__ = __webpack_require__(768);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Footer_jsx__ = __webpack_require__(769);
+
+
+
 
 
 
  // eslint-disable-next-line arrow-body-style
 
 var BotLanding = function BotLanding() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Hero, null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(SectionOne, null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Carousel_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(SectionTwo, null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(SectionThree, null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Footer, null));
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Hero_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SwitchSection_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Carousel_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__WaitSection_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__ChooseSection_jsx__["a" /* default */], null), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Footer_jsx__["a" /* default */], null));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (BotLanding);
-
-var Hero = function Hero() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
-    className: "hero"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "hero-1 l-container"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "hero-1__content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Binary Bot has a new home')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('We’ve been Binary.com for 2 decades and it’s time for an exciting new chapter.Your favourite bot builder, Binary Bot, is now on Deriv, our new home.Come take a peek.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "btn-group"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://bot.deriv.com",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-    className: "l-btn primary"
-  }, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Take me to deriv'))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "/bot.html"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-    className: "l-btn"
-  }, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Maybe later'))))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "hero-1__placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: ""
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    className: "hero-1__binary_logo",
-    src: "image/binary.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/laptop-1.webp"
-  }))));
-};
-
-var SectionOne = function SectionOne() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
-    className: "switch"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "switch-inner l-container"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "switch-inner__placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/sectionTwoLandingImages.png"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "switch-inner__content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('It’s so easy to switch to Deriv')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Just log in using your Binary.com credentials. No sign-up needed.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "btn-group"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: Object(__WEBPACK_IMPORTED_MODULE_3__common_appId__["i" /* getOAuthURLDeriv */])()
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-    className: "l-btn danger"
-  }, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Try it now'))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "/bot.html"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-    className: "l-btn"
-  }, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Maybe later')))))));
-};
-
-var SectionTwo = function SectionTwo() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
-    className: "choose-wrapper"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner l-container"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
-    className: "choose-inner-title"
-  }, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('6 reasons you’ll love Deriv')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-section-content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-left"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-left-content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/trading-platforms.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-description"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('7 trading platforms — old favourites and new ones, too')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('You’ll find Binary Bot and SmartTrader alongside new platforms like DBot and DTrader. Whatever your trading style, we’ve got the platform for you.')))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-left-content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/trade-types.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-description"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('3 trade types')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Trade CFDs, digital options, and multipliers, a new, exciting trade type that boosts your potential profits with limited risk.')))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-left-content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/market_types.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-description"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('6 market types')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Expand your portfolio with a wide range of markets such as forex, stocks, cryptocurrencies, synthetics, and more.'))))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-right"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-right-content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/fiat-on-ramp.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-description"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
-    className: "mb0"
-  }, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Cryptocurrency deposits via')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('fiat on-ramp')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Make crypto deposits easily via exchange services such as Changelly, Banxa, and XanPool.')))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-right-content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/peer-to-peer.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-description"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Peer-to-peer deposits and withdrawals')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Exchange your local currency with fellow traders to get funds in and out of your account with Deriv P2P.')))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-inner-right-content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/deriv_academy.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "choose-description"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Learn with Deriv Academy')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Enjoy complimentary articles and videos to help you learn the ropes of online trading.'))))))));
-};
-
-var SectionThree = function SectionThree() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
-    className: "wait-wrapper"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "wait-wrapper-inner l-container"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "wait-content"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Don’t wait')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Future-proof your trading. Come over to Deriv now.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "btn-group"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://bot.deriv.com",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-    className: "l-btn danger"
-  }, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Trade Binary Bot on Deriv'))))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "wait-placeholder"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/dont-wait-image.svg"
-  }))));
-};
-
-var Footer = function Footer() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
-    className: "about-trade-wrapper"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "about-trade-wrapper-inner l-container"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "about-trade-wrapper-inner-social-icons-wrapper"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "about-trade-wrapper-inner-deriv-icons"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/derivLogo.png"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "about-trade-wrapper-inner-social-icons"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://www.facebook.com/derivdotcom",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/facebook.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://twitter.com/derivdotcom/",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/twitter.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://www.instagram.com/deriv_official/",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/instagram.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://www.linkedin.com/company/derivdotcom/",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/linkedin.svg"
-  })))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "about-trade-wrapper-inner-social-icons-mobile"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://www.facebook.com/derivdotcom",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/facebook.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://twitter.com/derivdotcom/",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/twitter.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://www.instagram.com/deriv_official/",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/instagram.svg"
-  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    href: "https://www.linkedin.com/company/derivdotcom/",
-    target: "_blank"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
-    src: "image/linkedin.svg"
-  }))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "location-info"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Deriv Investments (Europe) Limited, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta, is licensed in Malta ('), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('licence no. IS/70156')), Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])(') and regulated by the Malta Financial Services Authority under the Investments Services Act to provide investment services in the European Union. Authorised by the Financial Conduct Authority and deemed with variation of permission. Subject to regulation by the Financial Conduct Authority.The nature and extent of consumer protections may differ from those for firms based in the UK. Details of the Financial Services Contracts Regime, which allows EEA-based firms to operate in the UK for a limited period to carry on activities that are necessary for the performance of pre-existing contracts, are available on the Financial Conduct Authority’s website.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Outside the EU, financial products are offered by the following companies: Deriv (FX) Ltd, F16, Level 1, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, licensed by Labuan Financial Services Authority ('), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('licence no. MB/18/0024')), Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])(') Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, licensed by the British Virgin Islands Financial Services Commission ('), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('licence no. SIBA/L/18/1114')), Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])(') Deriv (V) Ltd ('), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('view licence')), Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('), 1276, Kumul Highway, Port Vila, Vanuatu, licensed and regulated by the Vanuatu Financial Services Commission; and Deriv (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Deriv Limited — 13 Castle Street, St. Helier, JE2 3BT, Jersey — is the holding company for the above subsidiaries.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('This websites services are not available in certain countries, including the USA, Canada, and Hong Kong, or to persons below 18.'))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-    className: "trade-info"
-  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('CFDs are considered complex derivatives and may not be suitable for retail clients. CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. The products mentioned here may be affected by changes in currency exchange rates. If you invest in these products, you may lose some or all of your investment, and the value of your investment may fluctuate. You should never invest money that you cannot afford to lose and never trade with borrowed money.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Before trading in the complex financial products offered, please be sure to understand the risks involved and learn about '), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_2__common_i18n__["c" /* translate */])('Secure and responsible trading.'))))));
-};
 
 /***/ }),
 /* 748 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_i18n__ = __webpack_require__(1);
+
+
+
+var Hero = function Hero() {
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
+    className: "hero"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "hero-inner section-container"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "hero-inner__content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Binary Bot has a new home')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('We’ve been Binary.com for 2 decades and it’s time for an exciting new chapter. Your favourite bot builder, Binary Bot, is now on Deriv, our new home. Come take a peek.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "btn-group"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://bot.deriv.com",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+    className: "l-btn primary"
+  }, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Take me to deriv'))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "/bot.html"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+    className: "l-btn"
+  }, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Maybe later'))))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "hero-inner__placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: ""
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    className: "hero-inner__binary_logo",
+    src: "image/binary.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/laptop-1.webp"
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Hero);
+
+/***/ }),
+/* 749 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_i18n__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_appId__ = __webpack_require__(41);
+
+
+
+
+var SwitchSection = function SwitchSection() {
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
+    className: "switch"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "switch-inner section-container"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "switch-inner__placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/sectionTwoLandingImages.png"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "switch-inner__content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('It’s so easy to switch to Deriv')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Just log in using your Binary.com credentials. No sign-up needed.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "btn-group"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: Object(__WEBPACK_IMPORTED_MODULE_2__common_appId__["i" /* getOAuthURLDeriv */])()
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+    className: "l-btn danger"
+  }, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Try it now'))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "/bot.html"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+    className: "l-btn"
+  }, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Maybe later')))))));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (SwitchSection);
+
+/***/ }),
+/* 750 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_map_js__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_map_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_modules_es6_array_map_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_slick__ = __webpack_require__(749);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_slick__ = __webpack_require__(751);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_slick___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_slick__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_i18n__ = __webpack_require__(1);
 
@@ -76965,19 +76849,19 @@ var Footer = function Footer() {
 
 
 var carouselContentArray = [{
-  title: 'Where to find Binary Bot on Deriv',
-  content: 'On the Deriv homepage, hit Trade at the top of the page and choose Binary Bot.',
-  action_text: 'Try Binary Bot on Deriv',
+  title: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Where to find Binary Bot on Deriv'),
+  content: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('On the Deriv homepage, hit Trade at the top of the page and choose Binary Bot.'),
+  action_text: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Try Binary Bot on Deriv'),
   img: 'image/1a.webm'
 }, {
-  title: 'Bring your bots across seamlessly',
-  content: 'Your strategies from Binary.com can be used on Deriv. Just load your XML files and get trading.',
-  action_text: 'Try Binary Bot on Deriv',
+  title: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Bring your bots across seamlessly'),
+  content: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Your strategies from Binary.com can be used on Deriv. Just load your XML files and get trading.'),
+  action_text: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Try Binary Bot on Deriv'),
   img: 'image/2a.webm'
 }, {
-  title: 'Where to find Binary Bot on Deriv',
-  content: 'On the Deriv homepage, hit Trade at the top of the page and choose Binary Bot.',
-  action_text: 'Try Binary Bot on Deriv',
+  title: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Where to find Binary Bot on Deriv'),
+  content: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('On the Deriv homepage, hit Trade at the top of the page and choose Binary Bot.'),
+  action_text: Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Try Binary Bot on Deriv'),
   img: 'image/3a.webm'
 }];
 
@@ -76985,7 +76869,7 @@ var Carousel = function Carousel() {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -77016,7 +76900,7 @@ var Carousel = function Carousel() {
     }]
   };
   return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
-    className: "carousel-wrapper l-container"
+    className: "carousel-wrapper section-container"
   }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_slick___default.a, settings, carouselContentArray.map(function (slide, index) {
     var title = slide.title,
         content = slide.content,
@@ -77027,12 +76911,12 @@ var Carousel = function Carousel() {
       key: index
     }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
       className: "landing_carousel_content"
-    }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])(title)), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])(content)), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("a", {
+    }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h1", null, title), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("h2", null, content), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("a", {
       href: "https://bot.deriv.com",
       target: "_blank"
     }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("button", {
       className: "l-btn danger"
-    }, Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])(action_text)))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
+    }, action_text))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
       className: "landing_carousel_placeholder"
     }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
       className: "bot-gif-placeholder"
@@ -77059,7 +76943,7 @@ var Carousel = function Carousel() {
 /* harmony default export */ __webpack_exports__["a"] = (Carousel);
 
 /***/ }),
-/* 749 */
+/* 751 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77070,7 +76954,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _slider = _interopRequireDefault(__webpack_require__(750));
+var _slider = _interopRequireDefault(__webpack_require__(752));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -77078,7 +76962,7 @@ var _default = _slider["default"];
 exports["default"] = _default;
 
 /***/ }),
-/* 750 */
+/* 752 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77089,13 +76973,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(3));
+var _react = _interopRequireDefault(__webpack_require__(2));
 
-var _innerSlider = __webpack_require__(751);
+var _innerSlider = __webpack_require__(753);
 
-var _json2mq = _interopRequireDefault(__webpack_require__(758));
+var _json2mq = _interopRequireDefault(__webpack_require__(760));
 
-var _defaultProps = _interopRequireDefault(__webpack_require__(760));
+var _defaultProps = _interopRequireDefault(__webpack_require__(762));
 
 var _innerSliderUtils = __webpack_require__(176);
 
@@ -77131,7 +77015,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var enquire = (0, _innerSliderUtils.canUseDOM)() && __webpack_require__(761);
+var enquire = (0, _innerSliderUtils.canUseDOM)() && __webpack_require__(763);
 
 var Slider = /*#__PURE__*/function (_React$Component) {
   _inherits(Slider, _React$Component);
@@ -77374,7 +77258,7 @@ exports["default"] = Slider;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 751 */
+/* 753 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77385,23 +77269,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.InnerSlider = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(3));
+var _react = _interopRequireDefault(__webpack_require__(2));
 
-var _initialState = _interopRequireDefault(__webpack_require__(752));
+var _initialState = _interopRequireDefault(__webpack_require__(754));
 
-var _lodash = _interopRequireDefault(__webpack_require__(753));
+var _lodash = _interopRequireDefault(__webpack_require__(755));
 
 var _classnames = _interopRequireDefault(__webpack_require__(193));
 
 var _innerSliderUtils = __webpack_require__(176);
 
-var _track = __webpack_require__(754);
+var _track = __webpack_require__(756);
 
-var _dots = __webpack_require__(755);
+var _dots = __webpack_require__(757);
 
-var _arrows = __webpack_require__(756);
+var _arrows = __webpack_require__(758);
 
-var _resizeObserverPolyfill = _interopRequireDefault(__webpack_require__(757));
+var _resizeObserverPolyfill = _interopRequireDefault(__webpack_require__(759));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -78254,7 +78138,7 @@ var InnerSlider = /*#__PURE__*/function (_React$Component) {
 exports.InnerSlider = InnerSlider;
 
 /***/ }),
-/* 752 */
+/* 754 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78299,7 +78183,7 @@ var _default = initialState;
 exports["default"] = _default;
 
 /***/ }),
-/* 753 */
+/* 755 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/**
@@ -78683,7 +78567,7 @@ module.exports = debounce;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
 /***/ }),
-/* 754 */
+/* 756 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78694,7 +78578,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Track = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(3));
+var _react = _interopRequireDefault(__webpack_require__(2));
 
 var _classnames = _interopRequireDefault(__webpack_require__(193));
 
@@ -78977,7 +78861,7 @@ var Track = /*#__PURE__*/function (_React$PureComponent) {
 exports.Track = Track;
 
 /***/ }),
-/* 755 */
+/* 757 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78988,7 +78872,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Dots = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(3));
+var _react = _interopRequireDefault(__webpack_require__(2));
 
 var _classnames = _interopRequireDefault(__webpack_require__(193));
 
@@ -79118,7 +79002,7 @@ var Dots = /*#__PURE__*/function (_React$PureComponent) {
 exports.Dots = Dots;
 
 /***/ }),
-/* 756 */
+/* 758 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79129,7 +79013,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.NextArrow = exports.PrevArrow = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(3));
+var _react = _interopRequireDefault(__webpack_require__(2));
 
 var _classnames = _interopRequireDefault(__webpack_require__(193));
 
@@ -79306,7 +79190,7 @@ var NextArrow = /*#__PURE__*/function (_React$PureComponent2) {
 exports.NextArrow = NextArrow;
 
 /***/ }),
-/* 757 */
+/* 759 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -80243,10 +80127,10 @@ var index = (function () {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(26)))
 
 /***/ }),
-/* 758 */
+/* 760 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var camel2hyphen = __webpack_require__(759);
+var camel2hyphen = __webpack_require__(761);
 
 var isDimension = function (feature) {
   var re = /[height|width]$/;
@@ -80299,7 +80183,7 @@ var json2mq = function (query) {
 module.exports = json2mq;
 
 /***/ }),
-/* 759 */
+/* 761 */
 /***/ (function(module, exports) {
 
 var camel2hyphen = function (str) {
@@ -80313,7 +80197,7 @@ var camel2hyphen = function (str) {
 module.exports = camel2hyphen;
 
 /***/ }),
-/* 760 */
+/* 762 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80324,7 +80208,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(3));
+var _react = _interopRequireDefault(__webpack_require__(2));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -80392,18 +80276,18 @@ var _default = defaultProps;
 exports["default"] = _default;
 
 /***/ }),
-/* 761 */
+/* 763 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MediaQueryDispatch = __webpack_require__(762);
+var MediaQueryDispatch = __webpack_require__(764);
 module.exports = new MediaQueryDispatch();
 
 
 /***/ }),
-/* 762 */
+/* 764 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MediaQuery = __webpack_require__(763);
+var MediaQuery = __webpack_require__(765);
 var Util = __webpack_require__(468);
 var each = Util.each;
 var isFunction = Util.isFunction;
@@ -80491,10 +80375,10 @@ module.exports = MediaQueryDispatch;
 
 
 /***/ }),
-/* 763 */
+/* 765 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var QueryHandler = __webpack_require__(764);
+var QueryHandler = __webpack_require__(766);
 var each = __webpack_require__(468).each;
 
 /**
@@ -80590,7 +80474,7 @@ module.exports = MediaQuery;
 
 
 /***/ }),
-/* 764 */
+/* 766 */
 /***/ (function(module, exports) {
 
 /**
@@ -80668,6 +80552,194 @@ QueryHandler.prototype = {
 
 module.exports = QueryHandler;
 
+
+/***/ }),
+/* 767 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_i18n__ = __webpack_require__(1);
+
+
+
+var WaitSection = function WaitSection() {
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
+    className: "wait-wrapper"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "wait-wrapper-inner section-container"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "wait-wrapper-inner-content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Don’t wait')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Future-proof your trading. Come over to Deriv now.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "btn-group"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://bot.deriv.com",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+    className: "l-btn danger"
+  }, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Trade Binary Bot on Deriv'))))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "wait-wrapper-inner-placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/dont-wait-image.svg"
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (WaitSection);
+
+/***/ }),
+/* 768 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_i18n__ = __webpack_require__(1);
+
+
+
+var ChooseSection = function ChooseSection() {
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
+    className: "choose-wrapper"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner section-container"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+    className: "choose-wrapper-inner-title"
+  }, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('6 reasons you’ll love Deriv')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-section-content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-left"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-left-content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/trading-platforms.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-description"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('7 trading platforms — old favourites and new ones, too')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('You’ll find Binary Bot and SmartTrader alongside new platforms like DBot and DTrader. Whatever your trading style, we’ve got the platform for you.')))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-left-content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/trade-types.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-description"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('3 trade types')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Trade CFDs, digital options, and multipliers, a new, exciting trade type that boosts your potential profits with limited risk.')))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-left-content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/market_types.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-description"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('6 market types')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Expand your portfolio with a wide range of markets such as forex, stocks, cryptocurrencies, synthetics, and more.'))))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-right"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-right-content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/fiat-on-ramp.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-description"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", {
+    className: "mb0"
+  }, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Cryptocurrency deposits via')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('fiat on-ramp')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Make crypto deposits easily via exchange services such as Changelly, Banxa, and XanPool.')))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-right-content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/peer-to-peer.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-description"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Peer-to-peer deposits and withdrawals')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Exchange your local currency with fellow traders to get funds in and out of your account with Deriv P2P.')))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-right-content"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-placeholder"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/deriv_academy.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "choose-wrapper-inner-description"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Learn with Deriv Academy')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Enjoy complimentary articles and videos to help you learn the ropes of online trading.'))))))));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (ChooseSection);
+
+/***/ }),
+/* 769 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_i18n__ = __webpack_require__(1);
+
+
+
+var Footer = function Footer() {
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
+    className: "about-trade-wrapper"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "about-trade-wrapper-inner section-container"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "about-trade-wrapper-inner-social-icons-wrapper"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "about-trade-wrapper-deriv-icons"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/derivLogo.png"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "about-trade-wrapper-social-icons"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://www.facebook.com/derivdotcom",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/facebook.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://twitter.com/derivdotcom/",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/twitter.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://www.instagram.com/deriv_official/",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/instagram.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://www.linkedin.com/company/derivdotcom/",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/linkedin.svg"
+  })))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "about-trade-wrapper-inner-social-icons-mobile"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://www.facebook.com/derivdotcom",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/facebook.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://twitter.com/derivdotcom/",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/twitter.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://www.instagram.com/deriv_official/",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/instagram.svg"
+  })), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    href: "https://www.linkedin.com/company/derivdotcom/",
+    target: "_blank"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+    src: "image/linkedin.svg"
+  }))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "about-trade-wrapper-location-info"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Deriv Investments (Europe) Limited, W Business Centre, Level 3, Triq Dun Karm, Birkirkara BKR 9033, Malta, is licensed in Malta ('), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('licence no. IS/70156')), Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])(') and regulated by the Malta Financial Services Authority under the Investments Services Act to provide investment services in the European Union. Authorised by the Financial Conduct Authority and deemed with variation of permission. Subject to regulation by the Financial Conduct Authority.The nature and extent of consumer protections may differ from those for firms based in the UK. Details of the Financial Services Contracts Regime, which allows EEA-based firms to operate in the UK for a limited period to carry on activities that are necessary for the performance of pre-existing contracts, are available on the Financial Conduct Authority’s website.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Outside the EU, financial products are offered by the following companies: Deriv (FX) Ltd, F16, Level 1, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, licensed by Labuan Financial Services Authority ('), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('licence no. MB/18/0024')), Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])(') Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, licensed by the British Virgin Islands Financial Services Commission ('), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('licence no. SIBA/L/18/1114')), Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])(') Deriv (V) Ltd ('), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('view licence')), Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('), 1276, Kumul Highway, Port Vila, Vanuatu, licensed and regulated by the Vanuatu Financial Services Commission; and Deriv (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Deriv Limited — 13 Castle Street, St. Helier, JE2 3BT, Jersey — is the holding company for the above subsidiaries.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('This websites services are not available in certain countries, including the USA, Canada, and Hong Kong, or to persons below 18.'))), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+    className: "about-trade-wrapper-trade-info"
+  }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('CFDs are considered complex derivatives and may not be suitable for retail clients. CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. The products mentioned here may be affected by changes in currency exchange rates. If you invest in these products, you may lose some or all of your investment, and the value of your investment may fluctuate. You should never invest money that you cannot afford to lose and never trade with borrowed money.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Before trading in the complex financial products offered, please be sure to understand the risks involved and learn about '), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("b", null, Object(__WEBPACK_IMPORTED_MODULE_1__common_i18n__["c" /* translate */])('Secure and responsible trading.'))))));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Footer);
 
 /***/ })
 /******/ ]);
