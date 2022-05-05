@@ -30,8 +30,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="referrer" content="origin">
     <title>Binary Bot</title>
-    <link href="css/bundle-36551a39ca.css" rel="stylesheet" />    <link rel="stylesheet" href="css/binary.css">
-    <link href="css/bot-35b09260ef.css" rel="stylesheet" /></head>
+    <link href="css/bundle-bfd9aa3ef3.css" rel="stylesheet" />    <link rel="stylesheet" href="css/binary.css">
+    <link href="css/bot-f502331255.css" rel="stylesheet" /></head>
 
 <body>
     <div id="bot-main" class="hidden" style="width: 100%;position: relative;height: 100%;">  
@@ -255,12 +255,27 @@
             multiple />
     </form>
     <div id="footer"></div>
-    <audio id="announcement" src="sound/announcement.ogg" autostart="false"></audio>
-    <audio id="earned-money" src="sound/coins.ogg" autostart="false"></audio>
-    <audio id="job-done" src="sound/job-done.ogg" autostart="false"></audio>
-    <audio id="error" src="sound/out-of-bounds.ogg" autostart="false"></audio>
-    <audio id="severe-error" src="sound/i-am-being-serious.ogg" autostart="false"></audio>
-    <script src="js/bundle-ca910a23e2.js"></script><script src="js/bot-d27ca45536.min.js"></script>    <div id='elevio-shell' class='invisible'>
+    <audio id="announcement" autostart="false" preload="auto">
+        <source src="sound/announcement.ogg" type="audio/ogg" />
+        <source src="sound/announcement.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="earned-money" autostart="false" preload="auto">
+        <source src="sound/coins.ogg" type="audio/ogg" />
+        <source src="sound/coins.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="job-done" autostart="false" preload="auto">
+        <source src="sound/job-done.ogg" type="audio/ogg" />
+        <source src="sound/job-done.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="error" autostart="false" preload="auto">
+        <source src="sound/out-of-bounds.ogg" type="audio/ogg" />
+        <source src="sound/out-of-bounds.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="severe-error" autostart="false" preload="auto">
+        <source src="sound/i-am-being-serious.ogg" type="audio/ogg" />
+        <source src="sound/i-am-being-serious.mp3" type="audio/mp3" />
+    </audio>
+    <script src="js/bundle-ca910a23e2.js"></script><script src="js/bot-f04b40b61b.min.js"></script>    <div id='elevio-shell' class='invisible'>
         <span class='text'></span>
         <span class='icon'>
             <svg viewBox="0 0 74.2 74.2">
