@@ -80502,7 +80502,7 @@ var setDueDateAgain = function setDueDateAgain() {
 };
 
 var ModalComponent = function ModalComponent() {
-  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
+  return /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "bot-landing-alert-draggable-dialog draggable-dialog"
   }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Use Binary Bot on Deriv, our new home')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('In 5 minutes, we’ll show you the benefits of trading Binary Bot on Deriv.If you ignore this message, we’ll remind you again in 3 weeks.')), /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     className: "bot-landing-alert-btn-group"
@@ -80514,7 +80514,7 @@ var ModalComponent = function ModalComponent() {
     target: "_blank"
   }, /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
     className: "primary"
-  }, Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Take me to Binary Bot on Deriv'))))));
+  }, Object(__WEBPACK_IMPORTED_MODULE_3__common_i18n__["c" /* translate */])('Take me to Binary Bot on Deriv')))));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (ModalComponent);
